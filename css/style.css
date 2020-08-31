@@ -101,6 +101,7 @@ a {
     padding: 20px 40px;
     border-radius: 30px;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .btn-primary:hover {
@@ -165,12 +166,15 @@ a {
                          "e f g"
                          "e h h";
     max-width: 1110px;
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 80px auto;
 }
 
 .grid h2 {
     font-size: 40px;
     color: #192b59;
+    margin: 0 0 50px 0;
     font-weight: 700;
 }
 
@@ -180,13 +184,15 @@ a {
     letter-spacing: 1.5px;
     display: block;
 }
-.grid-text span{
+
+.grid-text span {
     font-size: 16px;
     font-weight: 700;
     color: #192b59;
     display: inline;
 }
-.grid-text p:last-child{
+
+.grid-text p:last-child {
     font-size: 14px;
     color: #1085e4;
 }
@@ -238,8 +244,8 @@ a {
 
 .grid-item {
     text-align: center;
-    box-shadow: 0 0 20px #f4f4f4;
-    margin: 40px 31px 20px 0;
+    box-shadow: 0px 5px 5px 2px #dbd7d7;
+    /*margin: 40px 31px 20px 0;*/
     padding: 70px 25px;
 }
 
@@ -473,6 +479,100 @@ a {
     color: #fff;
 }
 
+.software-icon {
+    display: block;
+    background-image: url("../img/icon-tool.png");
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 88px;
+    background-position: -13px;
+}
+
+.page-software .tittle-h2 {
+    max-width: 766px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
+.page-software-list {
+    margin-top: 31px;
+    height: 320px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.page-software-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.page-software-list::-webkit-scrollbar-track {
+    background-color: #1085e4;
+}
+
+.page-software-list::-webkit-scrollbar-track-piece {
+    background-color: #f3f6ff;
+}
+
+.page-software-list::-webkit-scrollbar-thumb {
+    height: 1px;
+    background-color: #1085e4;
+    border-radius: 30px;
+}
+
+.page-software-list dt {
+    font-weight: 700;
+    font-size: 16px;
+    color: #5a6789;
+    margin-bottom: 10px;
+}
+
+.page-software-list dd {
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+.page-app-content{
+    width: 55%;
+}
+.page-app-text {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #c4d2dd;
+}
+
+.page-app-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.page-app-list>li>a{
+    display: block;
+    background-repeat: no-repeat;
+    width: 189px;
+    height: 81px;
+}
+.page-app-list>li>a.page-app-android{
+    background-image: url("../img/google.png");
+}
+.page-app-list>li>a.page-app-ios{
+    background-position-x: -13px;
+    background-image: url("../img/apple.png");
+
+}
+.analytics-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-analytics p{
+    margin-bottom: 50px;
+}
+.analytics-flex>div{
+    flex-basis: 53%;
+}
 
 /* PAGES */
 .page-header {
@@ -521,4 +621,46 @@ a {
 .page-subscribe {
     background: rgb(10, 32, 144);
     background: linear-gradient(150deg, rgba(10, 32, 144, 1) 0%, rgba(35, 119, 205, 1) 100%);
+}
+
+.page-software {
+    background-image: url("../img/background-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0 155px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.page-software::after {
+    content: "";
+    background-image: url("../img/notebook.png");
+    position: absolute;
+    top: 105px;
+    left: 0;
+    width: 931px;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.page-software-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-software-flex > div {
+    flex-basis: 54%;
+}
+
+.page-app {
+    padding: 77px 0 85px 0;
+    background-image: url("../img/background-3.png");
+    background-repeat: no-repeat;
+}
+.page-analytics{
+    padding: 150px 0 130px 0;
+    background-image: url("../img/background-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
